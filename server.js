@@ -1,7 +1,11 @@
 const express = require("express"); //since i know im using express for this App, i am going to make sure we have access to express
 const app = express(); //storing express in 'app' variable. wherever you see 'app' you know you're using express
+const cors = require('cors')
 const PORT = 8300;
 /*first thing we do is setup server to hear request and respond*/
+
+app.use(cors())
+
 
 const bikinibottom = {
  id1 : {bName: "Doodle Bob",
